@@ -1,18 +1,19 @@
-const path = require("path")
+const path = require('path')
 
 const postCSSPlugins = [
-  require("postcss-import"),
-  require("postcss-simple-vars"),
-  require("postcss-nested"),
-  require("autoprefixer")]
+  require('postcss-import'),
+  require('postcss-simple-vars'),
+  require('postcss-nested'),
+  require('autoprefixer')
+]
 
 module.exports = {
-  entry: "./app/assets/scripts/App.js",
+  entry: './app/assets/scripts/App.js',
   output: {
-    filename: "bundled.js",
-    path: path.resolve(__dirname, "app")
+    filename: 'bundled.js',
+    path: path.resolve(__dirname, 'app')
   },
-  mode: "development",
+  mode: 'development',
   watch: true,
   module: {
     rules: [
