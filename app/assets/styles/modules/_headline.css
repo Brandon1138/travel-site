@@ -39,4 +39,8 @@
   &--b-margin-large {
     margin-bottom: .6em;
   }
+
+  &--no-t-margin {
+    margin-top: 0;
+  }
 }
