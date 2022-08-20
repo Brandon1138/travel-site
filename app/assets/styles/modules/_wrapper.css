@@ -7,7 +7,17 @@
   margin-right: auto;
 
   &--medium {
-    max-width: 976;
+    max-width: 976px;
+  }
+
+  &--no-padding-until-medium {
+    padding-left: 0;
+    padding-right: 0;
+
+    @mixin atMedium {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
   }
 
   .wrapper {
@@ -22,4 +32,5 @@
       margin-bottom: 3.875rem;
     }
   }
+
 }
