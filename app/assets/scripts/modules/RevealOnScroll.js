@@ -1,5 +1,5 @@
-import throttle from "lodash/throttle"
-import debounce from "lodash/debounce"
+import throttle from 'lodash/throttle'
+import debounce from 'lodash/debounce'
 
 class RevealOnScroll {
   constructor(els, thresholdPercent) {
@@ -21,11 +21,11 @@ class RevealOnScroll {
 
   calcCaller() {
     console.log("Scroll function ran")
-      this.itemsToReveal.forEach(el => {
-        if (el.isRevealed == false) {
-          this.calculateIfScrolledTo(el)
-        }
-      })
+    this.itemsToReveal.forEach(el => {
+      if (el.isRevealed == false) {
+        this.calculateIfScrolledTo(el)
+      }
+    })
   }
 
   calculateIfScrolledTo(el) {
