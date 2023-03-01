@@ -1,173 +1,382 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
-  <title>Clear View Escapes</title>
-  <meta name="keywords" content="Travel planning, travel bundles, travel escapes, affordable travel">
-  <meta name="description" content="Your clarity. One trip away. We create soul restoring journeys that inspire you to be you.">
-</head>
-<body>
-  <header class="site-header">
-    <div class="wrapper">
-      <div class="site-header__logo">
-        <img src="assets/images/icons/clear-view-escapes.svg">
-      </div>
-      
-      <div class="site-header__menu-icon">
-        <div class="site-header__menu-icon__middle"></div>
-      </div>
-      
-      <div class="site-header__menu-content">
-        <div class="site-header__btn-container">
-          <a href="#" class="btn open-modal">Get in Touch</a>
-        </div>
-        <nav class="primary-nav primary-nav--pull-right">
-          <ul>
-            <li><a href="#our-beginning" id="our-beginning-link">Our Beginning</a></li>
-            <li><a href="#features" id="features-link">Features</a></li>
-            <li><a href="#testimonials" id="testimonials-link">Testimonials</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
-
-  <div class="large-hero">
-    
-    <picture>
-      <source srcset="assets/images/hero--large.jpg 1920w, assets/images/hero--large-hi-dpi.jpg 3840w" media="(min-width: 1380px)">
-      <source srcset="assets/images/hero--medium.jpg 1380w, assets/images/hero--medium-hi-dpi.jpg 2760w" media="(min-width: 990px)">
-      <source srcset="assets/images/hero--small.jpg 990w, assets/images/hero--small-hi-dpi.jpg 1980w" media="(min-width: 640px)">
-      <img srcset="assets/images/hero--smaller.jpg 640w, assets/images/hero--smaller-hi-dpi.jpg 1280w" alt="Coastal view of ocean and mountains" class="large-hero__image">
-    </picture>
-
-    <div class="large-hero__text-content">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <title>Orpheus</title>
+    <meta
+      name="keywords"
+      content="Custom swords, fantasy swords, cosplay swords"
+    />
+    <meta
+      name="description"
+      content="Quenching your thirst for craftsmanship. We bring traditional forging techniques to your favorite blade designs to forge you a true heirloom."
+    />
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js'></script>
+  </head>
+  <body>
+    <header class="site-header">
       <div class="wrapper">
-        <h1 class="large-hero__title">Your clarity.</h1>
-        <h2 class="large-hero__subtitle">One trip away.</h2>
-        <p class="large-hero__description">We create soul restoring journeys that inspire you to be you.</p>
-        <p><a href="#" class="btn btn--orange btn--large open-modal">Get Started Today</a></p>
+        <div class="site-header__logo">
+          <img src="assets/images/icons/clear-view-escapes.svg" />
+        </div>
+
+        <div class="site-header__menu-icon">
+          <div class="site-header__menu-icon__middle"></div>
+        </div>
+
+        <div class="site-header__menu-content">
+          <div class="site-header__btn-container">
+            <a href="#" class="btn open-modal">Get in Touch</a>
+          </div>
+          <nav class="primary-nav primary-nav--pull-right">
+            <ul>
+              <li>
+                <a href="#our-beginning" id="our-beginning-link"
+                  >Our Beginning</a
+                >
+              </li>
+              <li><a href="#features" id="features-link">Features</a></li>
+              <li>
+                <a href="#testimonials" id="testimonials-link">Testimonials</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    
+    <div id="map">
+
+
+    </div>
+
+    <div class="large-hero">
+      <picture>
+        <source
+          srcset="
+            assets/images/swordhilt--large.jpg        1920w,
+            assets/images/swordhilt--large-hi-dpi.jpg 3840w
+          "
+          media="(min-width: 1380px)"
+        />
+        <source
+          srcset="
+            assets/images/swordhilt--medium.jpg        1380w,
+            assets/images/swordhilt--medium-hi-dpi.jpg 2760w
+          "
+          media="(min-width: 990px)"
+        />
+        <source
+          srcset="
+            assets/images/swordhilt--small.jpg         990w,
+            assets/images/swordhilt--small-hi-dpi.jpg 1980w
+          "
+          media="(min-width: 640px)"
+        />
+        <img
+          srcset="
+            assets/images/swordhilt--smaller.jpg         640w,
+            assets/images/swordhilt--smaller-hi-dpi.jpg 1280w
+          "
+          alt="Coastal view of ocean and mountains"
+          class="large-hero__image"
+        />
+      </picture>
+
+      <!--Delete this, from under, later-->
+
+      <div class="large-hero__text-content">
+        <div class="wrapper">
+          <h1 class="large-hero__title"></h1>
+          <h2 class="large-hero__subtitle"></h2>
+          <p class="large-hero__description">Every sword tells a story</p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div id="our-beginning" class="page-section" data-matching-link="#our-beginning-link">
-    <div class="wrapper">
-      <h2 class="headline headline--centered headline--light headline--b-margin-small">The first trip we planned <strong>was our own.</strong></h2>
-      <h3 class="headline headline--centered headline--orange headline--small headline--narrow headline--light headline--b-margin-large">Ever since, we&rsquo;ve been working to make travel <strong>better for everyone.</strong></h3>
+    <div
+      id="our-beginning"
+      class="page-section page-section--black"
+      data-matching-link="#our-beginning-link"
+    >
+      <div class="wrapper">
+        <p>
+          <a href="#" class="btn btn--orange btn--middle btn--large open-modal"
+            >Order Today</a
+          >
+        </p>
+        <h2
+          class="headline headline--centered headline--light headline--b-margin-small"
+        >
+          Quenching your thirst for <strong>craftsmanship.</strong>
+        </h2>
+        <h3
+          class="headline headline--centered headline--orange headline--small headline--narrow headline--light headline--b-margin-large"
+        >
+          We bring traditional techniques to your favorite blade designs to
+          forge you a <strong>true heirloom.</strong>
+        </h3>
 
-      <div class="wrapper wrapper--medium wrapper--b-margin">
-        <img class="lazyload" sizes="(min-width: 970px) 976px, 100vw" data-srcset="assets/images/first-trip-low-res.jpg 565w, assets/images/first-trip.jpg 976w, assets/images/first-trip-hi-dpi.jpg 1952w" alt="Couple walking down a street.">
-      </div>
-
-      <div class="row row--gutters">
-        <div class="row__medium-4 row__medium-4--larger row__b-margin-until-medium">
-          <picture>
-            <source sizes="404px" data-srcset="assets/images/our-start.jpg 404w, assets/images/our-start-hi-dpi.jpg 808w" media="(min-width: 1020px)">
-            <source sizes="320px" data-srcset="assets/images/our-start-portrait.jpg 382w, assets/images/our-start-portrait-hi-dpi.jpg 764w" media="(min-width: 800px)">
-            <img class="lazyload" data-srcset="assets/images/our-start-landscape.jpg 800w, assets/images/our-start-landscape-hi-dpi.jpg 1600w" alt="Our founder, Jane Doe">
-          </picture>
-        </div>
-        <div class="row__medium-8 row__medium-8--smaller">
-          <div class="generic-content-container">
-            <h2 class="headline headline--no-t-margin">Here&rsquo;s how we got started&hellip;</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <a href="#">quis nostrud exercitation</a> ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Duis aute irure dolor in <strong>reprehenderit in</strong> voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum velit esse cillum <strong>dolore eu fugiat.</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="features" class="page-section page-section--blue" data-matching-link="#features-link">
-    <div class="wrapper">
-      <h2 class="section-title"><img class="section-title__icon" src="assets/images/icons/star.svg"> Our <strong>Features</strong></h2>
-
-      <div class="row row--gutters-large generic-content-container">
-        
-        <div class="row__medium-6">
-
-          <div class="feature-item">
-            <img class="feature-item__icon" src="assets/images/icons/rain.svg">
-            <h3 class="feature-item__title">We&rsquo;ll Watch the Weather</h3>
-            <p>Download our app and we&rsquo;ll send you a notice if it&rsquo;s about to rain in the next 20 minutes around your current location. A good rain can be refreshing, but sometimes you just want to stay dry.</p>
-          </div>
-
-          <div class="feature-item">
-            <img class="feature-item__icon" src="assets/images/icons/globe.svg">
-            <h3 class="feature-item__title">Global Guides</h3>
-            <p>We&rsquo;ve scoured the entire planet for the best retreats and beautiful vistas. If there&rsquo;s a corner of the world you want to escape to we know the most scenic and inspiring locations.</p>
-          </div>
+        <div class="wrapper wrapper--medium wrapper--b-margin">
+          <img
+            class="lazyload"
+            sizes="(min-width: 970px) 976px, 100vw"
+            data-srcset="assets/images/swordwide--low-res.jpg 565w, assets/images/swordwide.jpg 976w, assets/images/swordwide--hi-dpi.jpg 1952w"
+            alt="Sword on display"
+          />
         </div>
 
-        <div class="row__medium-6">
-          <div class="feature-item">
-            <img class="feature-item__icon" src="assets/images/icons/wifi.svg">
-            <h3 class="feature-item__title">Wi-Fi Waypoints</h3>
-            <p>We only send you on trips to places we can personally vouch for as being amazing. Which means we&rsquo;ve mapped out where local wi-fi spots are and marked them in our app&rsquo;s map view.</p>
+        <div class="row row--gutters">
+          <div
+            class="row__medium-4 row__medium-4--larger row__b-margin-until-medium"
+          >
+            <picture>
+              <source
+                sizes="404px"
+                data-srcset="assets/images/swordsheathe.jpg 404w, assets/images/swordsheathe--hi-dpi.jpg 808w"
+                media="(min-width: 1020px)"
+              />
+              <source
+                sizes="320px"
+                data-srcset="assets/images/swordsheathe--portrait.jpg 382w, assets/images/swordsheathe--portrait-hi-dpi.jpg 764w"
+                media="(min-width: 800px)"
+              />
+              <img
+                class="lazyload"
+                data-srcset="assets/images/swordsheathe--landscape.jpg 800w, assets/images/swordsheathe--landscape-hi-dpi.jpg 1600w"
+                alt="Our founder, Jane Doe"
+              />
+            </picture>
           </div>
-
-          <div class="feature-item">
-            <img class="feature-item__icon" src="assets/images/icons/fire.svg">
-            <h3 class="feature-item__title">Survival Kit</h3>
-            <p>Everytime you book an escape with us we send you a survival kit with the finest materials. The kit will allow you to setup a tent, start a fire, scratch your own back and lower your taxes.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <div id="testimonials" class="page-section page-section--no-b-padding-until-large page-section--testimonials" data-matching-link="#testimonials-link">
-    <div class="wrapper wrapper--no-padding-until-large">
-      <h2 class="section-title section-title--blue"><img class="section-title__icon" src="assets/images/icons/comment.svg"> Real <strong>Testimonials</strong></h2>
-
-      <div class="row row--gutters row--equal-height-at-large row--gutters-small row--t-padding generic-content-container">
-        <div class="row__large-4">
-          <div class="testimonial">
-            <div class="testimonial__photo">
-              <img class="lazyload" sizes="160px" data-srcset="assets/images/testimonial-jane.jpg 160w, assets/images/testimonial-jane-hi-dpi.jpg 320w" alt="Jane Doe">
+          <div class="row__medium-8 row__medium-8--smaller">
+            <div class="generic-content-container">
+              <h2 class="headline headline--no-t-margin">Description:</h2>
+              <p>
+                The pinnacle of Dynasty Forge's capabilities, this classic
+                Samurai O-Katana (extended length sword) is made completely in
+                the historical method. Starting with small batch low-temperature
+                smelted steel made from iron sand, our smiths pick individual
+                pieces to balance the carbon content of the blade.
+              </p>
+              <p>
+                The blade is then forged and folded to remove impurities from
+                the Tamahagane, Clay-tempered and then hand polished over 40
+                hours on Japanese natural stones, the polish allows the wielder
+                to see deeply into the Hada and Hamon. Matched with darkened
+                silver Buddhist prayer wheel fittings and Japanese silk Ito,
+                this sword is the centerpiece of any collection.
+              </p>
+              <p>
+                <table>
+                  <tr> 
+                    <th>Blade length</th>
+                    <th>Overall length</th>
+                    <th>Country</th>
+                    <th>2</th>
+                    <th>3</th>
+                  </tr>
+                  <tr>
+                    <td>Blade length</td>
+                    <td>Overall length</td>
+                    <td>Germany</td>
+                    <td>Germany</td>
+                    <td>Germany</td>
+                  </tr>
+                  <tr>
+                    <td>Centro comercial Moctezuma</td>
+                    <td>Francisco Chang</td>
+                    <td>Mexico</td>
+                    <td>Germany</td>
+                    <td>Germany</td>  
+                  </tr>
+                </table>
+              </p>
             </div>
-            <h3 class="testimonial__title">Jane Doe</h3>
-            <h4 class="testimonial__subtitle">9 Time Escaper</h4>
-            <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&rdquo;</p>
-          </div>
-        </div>
-
-        <div class="row__large-4">
-          <div class="testimonial">
-            <div class="testimonial__photo">
-              <img class="lazyload" sizes="160px" data-srcset="assets/images/testimonial-john.jpg 160w, assets/images/testimonial-john-hi-dpi.jpg 320w" alt="John Smith">
-            </div>
-            <h3 class="testimonial__title">John Smith</h3>
-            <h4 class="testimonial__subtitle">4 Time Escaper</h4>
-            <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur.&rdquo;</p>
-          </div>
-        </div>
-
-        <div class="row__large-4">
-          <div class="testimonial testimonial--last">
-            <div class="testimonial__photo">
-              <img class="lazyload" sizes="160px" data-srcset="assets/images/testimonial-cat.jpg 160w, assets/images/testimonial-cat-hi-dpi.jpg 320w" alt="Cat McKitty">
-            </div>
-            <h3 class="testimonial__title">Cat McKitty</h3>
-            <h4 class="testimonial__subtitle">6 Time Escaper</h4>
-            <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.&rdquo;</p>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div id="my-react-example"></div>
+    <div
+      id="features"
+      class="page-section page-section--blue"
+      data-matching-link="#features-link"
+    >
+      <div class="wrapper">
+        <h2 class="section-title">
+          <img class="section-title__icon" src="assets/images/icons/star.svg" />
+          Our <strong>Features</strong>
+        </h2>
 
-  <footer class="site-footer">
-    <div class="wrapper">
-      <p><span class="site-footer__text">Copyright &copy; 2019 Clear View Escapes. All rights reserved.</span> <a href="#" class="btn btn--orange open-modal">Get in Touch</a></p>
+        <div class="row row--gutters-large generic-content-container">
+          <div class="row__medium-6">
+            <div class="feature-item">
+              <img
+                class="feature-item__icon"
+                src="assets/images/icons/rain.svg"
+              />
+              <h3 class="feature-item__title">Smelting</h3>
+              <p>
+                Smelters of tamahagane today make it the same way it was made in
+                ancient times. It is made in a type if furnace called a tatara.
+                As the smelting process begins, the tatara is slowly filled with
+                charcoal and iron sand. This process can take days.
+              </p>
+            </div>
+
+            <div class="feature-item">
+              <img
+                class="feature-item__icon"
+                src="assets/images/icons/globe.svg"
+              />
+              <h3 class="feature-item__title">Heat Treating</h3>
+              <p>
+                The differentially hardened blade is part of the sword's ability
+                to hold a sharp edge while maintaining blade flexibility. The
+                sword smith packs the spine of the blade with a special clay
+                during tempering. It acts as an insulation allowing the spine to
+                cool slower then the edge.
+              </p>
+            </div>
+          </div>
+
+          <div class="row__medium-6">
+            <div class="feature-item">
+              <img
+                class="feature-item__icon"
+                src="assets/images/icons/wifi.svg"
+              />
+              <h3 class="feature-item__title">Folding</h3>
+              <p>
+                In traditional Japanese sword making, the low-carbon iron is
+                folded several times by itself, to purify it. This produces the
+                soft metal to be used for the core of the blade. The high-carbon
+                steel and the higher-carbon cast-iron are then forged in
+                alternating layers.
+              </p>
+            </div>
+
+            <div class="feature-item">
+              <img
+                class="feature-item__icon"
+                src="assets/images/icons/fire.svg"
+              />
+              <h3 class="feature-item__title">Polishing</h3>
+              <p>
+                Now fully forged, the blade is passed to the sword polisher. The
+                blade is meticulously polished with a series of grinding and
+                polishing stones to hone the sword’s razor edge. This polishing
+                step can take several weeks, sometimes months.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </footer>
-  
-</body>
+
+    <div
+      id="testimonials"
+      class="page-section page-section--no-b-padding-until-large page-section--testimonials"
+      data-matching-link="#testimonials-link"
+    >
+      <div class="wrapper wrapper--no-padding-until-large">
+        <h2 class="section-title section-title--blue">
+          <img
+            class="section-title__icon"
+            src="assets/images/icons/comment.svg"
+          />
+          Real <strong>Testimonials</strong>
+        </h2>
+
+        <div
+          class="row row--gutters row--equal-height-at-large row--gutters-small row--t-padding generic-content-container"
+        >
+          <div class="row__large-4">
+            <div class="testimonial">
+              <div class="testimonial__photo">
+                <img
+                  class="lazyload"
+                  sizes="160px"
+                  data-srcset="assets/images/testimonial-jane.jpg 160w, assets/images/testimonial-jane-hi-dpi.jpg 320w"
+                  alt="Jane Doe"
+                />
+              </div>
+              <h3 class="testimonial__title">Jane Doe</h3>
+              <h4 class="testimonial__subtitle">9 Time Escaper</h4>
+              <p>
+                &ldquo;It was an absolute pleasure to work with Rob. Highly
+                responsive and flexible on all the special wishes, great ideas,
+                fully reliable on any aspect, but above all: what a beautiful
+                and skilled piece of stunning old fashioned
+                craftsmanship!&rdquo;
+              </p>
+            </div>
+          </div>
+
+          <div class="row__large-4">
+            <div class="testimonial">
+              <div class="testimonial__photo">
+                <img
+                  class="lazyload"
+                  sizes="160px"
+                  data-srcset="assets/images/testimonial-john.jpg 160w, assets/images/testimonial-john-hi-dpi.jpg 320w"
+                  alt="John Smith"
+                />
+              </div>
+              <h3 class="testimonial__title">John Smith</h3>
+              <h4 class="testimonial__subtitle">4 Time Escaper</h4>
+              <p>
+                &ldquo;Duis aute irure dolor in reprehenderit in voluptate velit
+                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+                consectetur.&rdquo;
+              </p>
+            </div>
+          </div>
+
+          <div class="row__large-4">
+            <div class="testimonial testimonial--last">
+              <div class="testimonial__photo">
+                <img
+                  class="lazyload"
+                  sizes="160px"
+                  data-srcset="assets/images/testimonial-cat.jpg 160w, assets/images/testimonial-cat-hi-dpi.jpg 320w"
+                  alt="Cat McKitty"
+                />
+              </div>
+              <h3 class="testimonial__title">Cat McKitty</h3>
+              <h4 class="testimonial__subtitle">6 Time Escaper</h4>
+              <p>
+                &ldquo;Duis aute irure dolor in reprehenderit in voluptate velit
+                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                ut.&rdquo;
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="wrapper">
+        <p>
+          <span class="site-footer__text"
+            >Copyright &copy; 2022 Clear View Escapes. All rights
+            reserved.</span
+          >
+          <a href="#" class="btn btn--orange open-modal">Get in Touch</a>
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
