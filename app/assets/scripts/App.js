@@ -31,7 +31,7 @@ if (module.hot) {
 
 var map = new mapboxgl.Map({
   container: "map",
-  style: "mapbox://styles/mapbox/streets-v11",
+  style: "mapbox://styles/ishmael38/clepx6wg500fk01lkom3g3gj8",
   center: [0, 0],
   zoom: 2,
   accessToken: "pk.eyJ1IjoiaXNobWFlbDM4IiwiYSI6ImNsZXB1cnZvOTBnMmYzcXA0cTR6dmwyYzUifQ.cUF-0ZhkiJsq8iQqt7aiGw"
